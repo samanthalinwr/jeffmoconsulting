@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeff Mo Business Card</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background: #f5f5f7;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .business-card {
+            width: 350px;
+            height: 200px;
+            background: #ffffff;
+            border-radius: 4px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+        }
+
+        .name {
+            font-size: 22px;
+            font-weight: 400;
+            color: #1d1d1f;
+            letter-spacing: 0.3px;
+            margin-bottom: 8px;
+        }
+
+        .specialty {
+            font-size: 11px;
+            font-weight: 300;
+            color: #86868b;
+            letter-spacing: 0.8px;
+            margin-bottom: 24px;
+        }
+
+        .contact {
+            font-size: 12px;
+            font-weight: 300;
+            color: #1d1d1f;
+            letter-spacing: 0.2px;
+            line-height: 1.8;
+            text-align: center;
+        }
+
+        /* Print styles */
+        @media print {
+            body {
+                background: white;
+            }
+            .business-card {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="business-card">
+        <div class="name">Jeff Mo</div>
+        <div class="specialty">Machine Learning Consulting</div>
+        <div class="contact">
+            self@suboptimal.engineer<br>
+            jeffmoconsulting.com
+        </div>
+    </div>
+</body>
+</html>
