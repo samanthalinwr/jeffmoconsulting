@@ -18,7 +18,7 @@
     section{border-top:1px solid var(--border);padding:64px 0}
     .hero p{color:var(--muted);max-width:680px;margin:12px 0 0}
     .grid{display:grid;gap:20px}
-    @media(min-width:900px){.hero .grid{grid-template-columns:1fr 1fr}}
+    @media(min-width:900px){.hero .grid{grid-template-columns:1fr 1fr;align-items:center}}
     .cards{display:grid;gap:20px}
     @media(min-width:900px){.cards{grid-template-columns:repeat(3,1fr)}}
     .card{background:var(--card);border:1px solid var(--border);border-radius:20px;padding:20px}
@@ -30,6 +30,11 @@
     textarea{min-height:140px}
     footer{border-top:1px solid var(--border);padding:32px 0;color:var(--muted)}
     .chip{display:inline-block;border:1px solid var(--border);border-radius:999px;padding:4px 10px;font-size:12px;margin:2px 6px 0 0}
+    .hero-cloud {min-height: 320px;padding: 18px;border: 1px solid var(--border);border-radius: 20px;background: radial-gradient(80% 70% at 60% 40%, #ffffff10 0%, #ffffff05 50%, #ffffff00 100%);display: flex;flex-wrap: wrap;align-content: center;gap: 10px;}
+    .hero-cloud span {border: 1px solid var(--border);border-radius: 999px;padding: 6px 12px;color: var(--fg);background: #111;white-space: nowrap;}
+    .hero-cloud .w1 { font-size: 18px; }
+    .hero-cloud .w2 { font-size: 16px; opacity: .9; }
+    .hero-cloud .w3 { font-size: 14px; opacity: .8; }
   </style>
 </head>
 <body>
@@ -46,12 +51,21 @@
     <section class="hero">
       <div class="wrap grid">
         <div>
-          <h1>Making information discovery easier thru applied ML</h1>
+          <h1>Making information discovery easier through applied ML</h1>
           <p>Jeff is a machine learning engineer focused on recommendations, search, and NLP with roles at Reddit, Faire, Twitter, and Borealis AI. Work includes neural retrieval, ranking, entity linking, and knowledge graphs. (All experience phrasing derived from LinkedIn.)</p>
           <div style="margin-top:18px;display:flex;gap:10px">
             <a class="btn primary" href="https://www.linkedin.com/in/jeffmooooo/" target="_blank" rel="noreferrer">Connect on LinkedIn</a>
             <a class="btn" href="https://www.linkedin.com/in/jeffmooooo/" target="_blank" rel="noreferrer">View profile</a>
           </div>
+        </div>
+        <div class="hero-cloud" aria-label="Key skills">
+          <span class="w1">Recommendations</span>
+          <span class="w2">Search</span>
+          <span class="w3">NLP</span>
+          <span class="w2">Neural Retrieval</span>
+          <span class="w1">Entity Linking</span>
+          <span class="w3">Knowledge Graphs</span>
+          <span class="w2">Experimentation</span>
         </div>
       </div>
     </section>
@@ -96,17 +110,8 @@
     </section>
 
     <section>
-      <div class="wrap">
-        <h2>About Jeff</h2>
-        <p class="muted" style="margin-top:8px;max-width:720px">Staff Machine Learning Engineer at Reddit. Previously: ML at Faire (neural retrieval and NLP; shipped ~10 projects driving an A/B‑tested ~27% lift in product orders in Search), Twitter (NLP, representation learning, recommendations & ranking; entity linking, search, knowledge graphs), and Borealis AI (applied ML in quantitative finance and trading). Education: The University of Waikato (BCMS Hons, First Class); Nanyang Technological University Singapore (CS, Overseas Exchange).</p>
-        <div style="margin-top:10px">
-          <span class="chip">Recommendations</span>
-          <span class="chip">Search</span>
-          <span class="chip">NLP</span>
-          <span class="chip">Neural Retrieval</span>
-          <span class="chip">Entity Linking</span>
-          <span class="chip">Knowledge Graphs</span>
-        </div>
+      <div style="text-align:center">
+        <img src="headshot.jpeg" alt="Jeff Mi" style="max-width:100%;border-radius:20px;border:1px solid var(--border)">
       </div>
     </section>
 
